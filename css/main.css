@@ -73,14 +73,16 @@ header {
                             /**********CONTAINER**********/
 
 main {
-  width: 100%;
-  font-size: 0;
+  max-width: 100%;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .articles {
   display: flex;
   align-items: center;
+  min-width: 100%;
 }
 
 .article {
@@ -100,7 +102,6 @@ main {
 .article_text {
   padding-top: 10px;
   color: #ffffff;
-  font-family: Georgia;
   font-style: italic;
   font-size: 18px;
   text-align: center;
@@ -122,27 +123,22 @@ main {
   background: url('../img/Layer_10.png') no-repeat center / cover;
 }
 
-.boxes {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 100px;
-}
-
 .box {
   font-size: 14px;
+  flex-basis: 25%;
+  margin-top: 95px;
 }
 
 .box_name {
   color: #000000;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Montserrat-Bold';
   margin-bottom: 40px;
 }
 
 .box_list {
   list-style-type: none;
-  font-family: sans-serif;
+  font-family:'Montserrat-Medium';
   font-style: italic;
 }
 
@@ -159,27 +155,7 @@ main {
   color: #da7074;
 }
 
-.social {
-  width: 100px;
-  margin-left: 200px;
-}
-
-.about {
-  width: 144px;
-  margin-left: 265px;
-}
-
-.locations {
-  width: 100px;
-  margin-left: 270px;
-}
-
-.mission {
-  width: 365px;
-  margin-left: 300px;
-}
 .mission_text {
-  text-align: left;
   font-size: 14px;
   font-family: "Montserrat-LightItalic";
   color: #9a9a9a;
